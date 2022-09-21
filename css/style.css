@@ -89,7 +89,8 @@ picture {
 
 .profile_picture:hover {
   box-shadow: 0px 0px 2rem rgba(240, 84, 84, 0.5);
-  outline-offset: 0rem;
+  outline: 2px solid #f05454a9;
+  outline-offset: -1px;
 }
 
 .profile_picture img {
@@ -197,6 +198,24 @@ nav {
   animation-delay: 600ms;
 }
 
+@keyframes vertical-shaking {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(2px);
+  }
+  50% {
+    transform: translateY(-2px);
+  }
+  75% {
+    transform: translateY(2px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .social_buttons li svg {
   fill: #fff;
   width: 1.5rem;
@@ -220,23 +239,4 @@ nav {
   font-weight: 900;
   margin-left: 0.5rem;
   letter-spacing: 0.3rem;
-}
-
-/* animations */
-@keyframes vertical-shaking {
-  0% {
-    transform: translateY(0);
-  }
-  25% {
-    transform: translateY(2px);
-  }
-  50% {
-    transform: translateY(-2px);
-  }
-  75% {
-    transform: translateY(2px);
-  }
-  100% {
-    transform: translateY(0);
-  }
 }
