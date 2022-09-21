@@ -36,6 +36,10 @@ h2 {
   font-weight: 700;
 }
 
+p {
+  margin: 0.5rem 0;
+}
+
 main a,
 main a:visited,
 main a:focus,
@@ -204,17 +208,17 @@ nav {
 
 /* knowledges */
 .knowledges-list {
-  margin-left: 2.5rem;
+  margin-left: 3.5rem;
   margin-top: 1rem;
   font-size: 1.25rem;
-  line-height: 2rem;
+  line-height: 2.5rem;
 }
 
 .plus {
   color: #00c851;
   font-size: 1.2rem;
   font-weight: 900;
-  margin-left: 0.3rem;
+  margin-left: 0.5rem;
   letter-spacing: 0.3rem;
 }
 
