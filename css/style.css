@@ -1,20 +1,23 @@
-@import "_reset.css";
+/* @import "_reset.css"; */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700;900&display=swap");
 
 /* Box sizing rules */
-/* *,
+*,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-} */
+}
 
 /* General */
 body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
   background-color: #dddddd;
   font-family: "Poppins", sans-serif;
-  font-size: 1em;
+  font-size: 1rem;
   display: flex;
   color: #30475e;
 }
@@ -29,6 +32,11 @@ h1 {
   font-weight: 900;
 }
 
+h2 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
 main a,
 main a:visited,
 main a:focus,
@@ -40,8 +48,15 @@ main a:link {
 }
 
 main:has(p) {
-  max-width: 100ch;
+  max-width: 95ch;
 }
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
 /* Aside styles */
 .sidebar {
   background-color: #222831;
@@ -64,11 +79,14 @@ main:has(p) {
   box-shadow: 0px 0px 2rem rgba(240, 84, 84, 0);
   overflow: hidden;
   position: relative;
-  transition: box-shadow 250ms ease-in-out;
+  outline: 2px solid #f05454;
+  outline-offset: 0.5rem;
+  transition: all 250ms ease-in-out;
 }
 
 .profile_picture:hover {
   box-shadow: 0px 0px 2rem rgba(240, 84, 84, 0.5);
+  outline-offset: 0rem;
 }
 
 .profile_picture img {
@@ -156,6 +174,7 @@ nav {
   list-style: none;
   justify-content: space-around;
   padding: 0;
+  margin-top: 1rem;
 }
 .social_buttons li {
   width: 3rem;
@@ -166,12 +185,13 @@ nav {
   align-items: center;
   justify-content: center;
   box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.1);
-  border: 0;
-  transition: border 0.3s ease;
+  outline: 0;
+  transition: outline 250ms ease;
 }
 .social_buttons li:hover {
-  border: 4px solid #f05454;
+  outline: 3px solid #f05454;
   animation: vertical-shaking 0.7s infinite;
+  animation-delay: 600ms;
 }
 
 .social_buttons li svg {
@@ -184,6 +204,20 @@ nav {
 }
 
 /* knowledges */
+.knowledges-list {
+  margin-left: 2.5rem;
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  line-height: 2rem;
+}
+
+.plus {
+  color: #00c851;
+  font-size: 1.2rem;
+  font-weight: 900;
+  margin-left: 0.3rem;
+  letter-spacing: 0.3rem;
+}
 
 /* animations */
 @keyframes vertical-shaking {
