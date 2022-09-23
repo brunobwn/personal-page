@@ -105,16 +105,6 @@ picture {
   align-items: center;
 }
 
-nav {
-  list-style: none;
-}
-
-.menu li {
-  margin-bottom: 1.3rem;
-  letter-spacing: 0.1rem;
-  line-height: 2rem;
-}
-
 .menu .active {
   font-weight: bold;
 }
@@ -123,6 +113,9 @@ nav {
 .menu a:visited,
 .menu a:link,
 .menu a:active {
+  margin-bottom: 1.3rem;
+  letter-spacing: 0.1rem;
+  line-height: 2rem;
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
