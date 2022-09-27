@@ -218,7 +218,6 @@ picture {
   width: 1rem;
 }
 
-/* knowledges */
 .knowledges-list {
   margin-left: 3.5rem;
   margin-top: 1rem;
@@ -232,4 +231,13 @@ picture {
   font-weight: 900;
   margin-left: 0.5rem;
   letter-spacing: 0.3rem;
+}
+
+.goal-list {
+  margin-left: 3.5rem;
+  margin-top: 1rem;
+  font-size: 1.25rem;
+}
+.goal-list > li {
+  margin-bottom: 1.5rem;
 }
