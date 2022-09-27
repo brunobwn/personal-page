@@ -1,6 +1,8 @@
 <section>
-<h1>Projetos de estudo</h1>
-<p>Estes são algumas atividades que estou desenvolvendo durente o curso de fullstack web na Growdev </p>
+<h1>Currículo Digital</h1>
+<p>Este projeto foi desenvolvido como forma de avaliação final do módulo Front-end I do programa <b>Starter Full Stack WEB Developer</b> da Growdev.</p>
+<p>O projeto consiste em 3 páginas HTML e 1 arquivo CSS, apresentando informações profissionais. Onde foi posto em prática os conceitos de HTML semântico e estilização CSS apresentados no módulo.</p>
+<p>Como forma de bônus, introduzi algumas animações em CSS puro para complementar o design proposto.</p>
 </section>
 <section>
 <h3>Tecnologias utilizadas:</h3>
